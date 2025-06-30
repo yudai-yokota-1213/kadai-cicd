@@ -3,7 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
-      - aws deploy push --application-name kadai-CICD-ec2 --s3-location s3://kadai-cicd-s3/artifact.zip --source src
+      - aws deploy push --application-name kadai-Deploy --s3-location s3://kadai-cicd-s3/artifact.zip --source src
 artifacts:
   files:
     - '**/*'
